@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+
+    <!-- Web Icon -->
+    <link rel="shortcut icon" href="./../assets/icon.svg" type="image/svg">
+
+    <!-- BootStrap 5 Css Linking -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="./../style.css">
+</head>
+
+<body>
+    <!-- Base Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-1 border-bottom fixed-top shadow-sm">
+        <div class="container-fluid px-4 py-1">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./../index.html">Student Name</a>
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
+                aria-controls="offcanvasNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Desktop Navigation Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html#home" data-aos="fade-right">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html#about" data-aos="fade-right"
+                            data-aos-delay="100">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html#research" data-aos="fade-right"
+                            data-aos-delay="200">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html" data-aos="fade-right"
+                            data-aos-delay="300">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html#resume" data-aos="fade-right"
+                            data-aos-delay="400">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-light px-4 rounded-5 shadow-sm"
+                            href="./../index.html#contact" data-aos="fade-down" data-aos-delay="500">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Navigation for Mobile -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./../index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./../index.html#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./../index.html#research">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./../index.html#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./../index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container my-5 pt-5">
+        <!-- Search Bar -->
+        <div class="mb-4">
+            <input type="text" id="searchInput" class="form-control"
+                placeholder="Search publications by title or description">
+        </div>
+
+        <!-- Publications Cards -->
+        <div class="row g-4" id="publicationsContainer"></div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="text-dark py-2 border border-top fixed-bottom">
+        <div
+            class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+            <p class="mb-2 mb-md-0">&copy;
+                <script>document.write(new Date().getFullYear());</script> All Rights Reserved.
+            </p>
+            <div class="d-flex justify-content-center">
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="text-dark nav-link me-3">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/your-profile" target="_blank" class="text-dark nav-link me-3">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://twitter.com/your-profile" target="_blank" class="text-dark nav-link">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 90,
+            delay: 0,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Smooth scrolling with an offset
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const offset = 130; // Adjust this value for the offset
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="./../JavaScript/main.js"></script>
+</body>
+
+</html>

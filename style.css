@@ -1,0 +1,72 @@
+:root {
+  /* Primary color scheme */
+  --primary-color: #007bff; /* Main Color */
+  --secondary-color: #6c757d;
+  --dark-color: #343a40;
+
+  /* Typography */
+  --font-family: "Helvetica Neue", Arial, sans-serif;
+  --base-font-size: 16px;
+  --base-line-height: 1.5;
+
+  /* Spacing */
+  --spacer: 1rem;
+
+  /* Custom global styles */
+  --border-radius: 0.25rem;
+}
+
+/* Override Bootstrap variables */
+body {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+/* Add more overrides as needed */
+.alert-primary {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.alert-secondary {
+  background-color: var(--secondary-color) !important;
+  color: #fff !important;
+}
+
+/* Custom elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: calc(var(--spacer) / 2);
+  font-weight: 600;
+}
+
+.container {
+  padding: calc(var(--spacer) / 2);
+}
+
+.rounded-5 {
+  border-radius: 1.3rem !important;
+}
+
+.primary-border {
+  border: 0.3px solid var(--primary-color);
+}
+
+.shadow-cust {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px;
+}
